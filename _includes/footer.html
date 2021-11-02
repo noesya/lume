@@ -1,25 +1,13 @@
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <a href="/">{{site.title}}</a>
-      </div>
-      <div class="col-md-6">
-        <ul class="nav flex-column">
-        {% for item in site.data.menus.primary %}
-          <li class="nav-item">
-            <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-        </ul>
-        <ul class="nav flex-column">
+    <p>
+        Web frugal : site de basse technologie (low tech)<br>
+        Poids de la page : 40 ko
+    </p>
+    <ul>
         {% for item in site.data.menus.legal %}
-          <li class="nav-item">
-            <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+          <li>
+            <a href="{{ item.url }}">{{ item.title }}</a>
           </li>
         {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
+    </ul>
 </footer>

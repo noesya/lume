@@ -1,8 +1,4 @@
 primary:
-  - title: Home
-    url: /
-  - title: About
-    url: /about
 legal:
   - title: Mentions légales
     url: /mentions-legales

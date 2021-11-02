@@ -4,13 +4,13 @@ body
     text-rendering: optimizelegibility
 
 ::selection
-    background: rgba($primary, .7)
-    color: $white
+    background: rgba(black, .7)
+    color: white
     text-shadow: none
 
 ::-moz-selection
-    background: rgba($primary, .7)
-    color: $white
+    background: rgba(black, .7)
+    color: white
     text-shadow: none
 
 img
@@ -28,3 +28,43 @@ img
 @media (prefers-reduced-motion: no-preference)
     *:focus-visible
         transition: outline-offset .3s ease
+
+*
+    font-family: 'Cormorant Garamond', serif
+
+body
+    text-align: center
+    padding: 20px
+
+.navbar-brand
+    display: block
+    margin: 60px auto
+
+h1
+    font-weight: normal
+    margin-bottom: 60px
+
+p
+    font-size: px2rem(20)
+    max-width: 400px
+    margin: 0 auto
+
+ul
+    list-style: none
+    padding: 0
+
+a
+    color: black
+
+
+footer
+    margin-top: 100px
+    &, p
+        font-size: px2rem(14)
+    p
+        margin-bottom: 30px
+    ul
+        li
+            display: inline-block
+            a
+                padding: 15px
