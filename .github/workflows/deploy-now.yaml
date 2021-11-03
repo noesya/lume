@@ -29,7 +29,12 @@ jobs:
           restore-keys: ${{ runner.os }}-gems-
       - name: Build project
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
-        uses: lemonarc/jekyll-action@1.0.0
+        uses: helaili/jekyll-action@v2
+        with:
+          build_only: true
+          jekyll_build_options: -d _site
+          pre_build_commands: |
+              apk --update add vips vips-tools nodejs
       - name: Deploy build
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         uses: ionos-deploy-now/deploy-to-ionos-action@v1
